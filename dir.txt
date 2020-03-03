@@ -1,0 +1,4 @@
+dir.txt		  exe_file	pandas_work   python_crawling
+Django_work	  jupyter_work	pycharm_work  youtube_download
+etc_util	  kaggle_work	pyhwp_work    디에스스쿨
+excel2hwp-master  ml_work	pyqt5_tut     오류해결법

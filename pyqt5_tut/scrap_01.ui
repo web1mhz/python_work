@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>493</width>
+    <height>229</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>웹툰 감지 프로그램</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>20</y>
+      <width>90</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>주소 입력하세요</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>470</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>79</y>
+      <width>110</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>주기를 선택하세요</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rb_10min">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>104</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>10분</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rb_5min">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>104</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5분</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rb_1min">
+    <property name="geometry">
+     <rect>
+      <x>118</x>
+      <y>104</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1분</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rb_30sec">
+    <property name="geometry">
+     <rect>
+      <x>171</x>
+      <y>104</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>30초</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rb_5sec">
+    <property name="geometry">
+     <rect>
+      <x>227</x>
+      <y>104</y>
+      <width>50</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5초</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_start">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>92</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>체크 시작</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_stop">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>92</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>체크 종료</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_print">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>141</y>
+      <width>461</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>KoPub돋움체 Bold</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_stop</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setStop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>453</x>
+     <y>98</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_start</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setChk()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rb_10min</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setCycle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>23</x>
+     <y>115</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>24</x>
+     <y>123</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rb_5min</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setCycle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>81</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>85</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rb_1min</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setCycle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>137</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>134</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rb_30sec</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setCycle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>186</x>
+     <y>104</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>180</x>
+     <y>84</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rb_5sec</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>setCycle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lbl_print</sender>
+   <signal>linkActivated(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>chk()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>setCycle()</slot>
+  <slot>setChk()</slot>
+  <slot>setStop()</slot>
+  <slot>chk()</slot>
+ </slots>
+</ui>
