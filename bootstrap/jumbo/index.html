@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- jquery & bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- style -->
+    <style>
+        body {
+
+            font: 20px Montserrat, sans-serif;
+        }
+
+        #img_profile {
+            width: 150px;
+            height: 150px;
+        }
+
+        .img_size {
+            width: 350px;
+            height: 250px;
+            padding-top: 20px;
+
+        }
+
+        .bg-main {
+            background-color: #1abc9c;
+            color: #fff;
+            font-weight: bold;
+            padding-top: 250px;
+            padding-bottom: 250px;
+        }
+
+        .bg-sub {
+            background-color: #474e5d;
+            color: #fff;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+        }
+
+        .bg-sub2 {
+            background-color: #fff;
+            color: #999;
+            padding-top: 50px;
+            padding-bottom: 100px;
+            font-size: 14px;
+        }
+
+
+
+        .footer {
+            background-color: #333;
+            color: #ccc;
+            padding-top: 70px;
+            padding-bottom: 50px;
+            font-size: 12px;
+        }
+    </style>
+
+    <!--출처: https://hongku.tistory.com/304 [IT에 취.하.개.] -->
+
+
+</head>
+
+<body>
+
+    <!-- nav bars -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">KNPS</a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"> <a class="nav-link" href="#">Profile</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">생물자원</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">탐방수요예측</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">공지사항</a> </li>
+            </ul>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item"> <a class="nav-link" href="#">Login</a> </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item"> <a class="nav-link" href="#">Login</a> </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item"> <a class="nav-link" href="#">Login</a> </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- main content -->
+    <div class="container-fluid text-center bg-main">
+
+        <p>Korea Natinal Park Service</p>
+        <img src="./img/profile.jpg" class="rounded-circle" id="img_profile">
+        <p>My profile</p>
+    </div>
+
+    <!-- sub content -->
+
+    <div class="contaniner-fluid text-center bg-sub">
+        <p class="h3">국립공원이란 ?</p>
+        <p>국립공원이란 무한 희생을 강요당한 자연에게 배려한 최대한의 공간이자, 자연의 결정권을 인정해주는 최소한의 공간임.</p>
+    </div>
+
+    <div class="container-fluid bg-sub2">
+
+        <P class="h3 text-center">KNPS's 경영이념</P>
+        <hr>
+
+        <div class="row text-justify">
+            <div class="col-sm-4">
+
+                <ul>
+                    <P class="text-center"><strong>자연주권</strong></P>
+
+                    <li> 국토의 핵심보전지역인 국립공원에 대한 무분별한 개발압력에 보존 우선의 확고한 관리원칙으로 대응함으로써 국토자존을 회복하고 국립공원의 새로운 발전과 도약의 기반을 구축
+                    </li><br />
+                    <li> 온전히 보전된 자연만이 국민의 행복한 미래를 담보할 수 있음.</li><br />
+                    <li> 미션인 ‘자연보전’과 ‘행복한 미래’ 반영</li>
+                </ul>
+
+
+            </div>
+            <div class="col-sm-4">
+                <ul>
+                    <P class="text-center"><strong>국민긍지</strong></P>
+                    <li>국립공원은 개인이 사유화할 수 있는 공간이 아니며, 누구나 쾌적한 자연환경에서 건강하고 여유 있는 생활을 누려야할 공간임.</li><br />
+                    <li>멸절의 위기로 내몰린 자연이 자유롭게 다시 번성하는 자연주권이 확보된 온전한 국립공원에 대하여 국민 모두가 당당한 긍지를 가지며, 이와 함께 국립공원이 주는 자연의 혜택을
+                        향유한다는 의미임.</li><br />
+                    <li> 미션인 ‘건강하고 행복한 미래’, 국정철학인 ‘국민이 주인인 정부’ 반영 </li><br />
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <ul>
+                <P class="text-center"><strong>소통공감</strong></P>
+                <li>국립공원을 지켜내는 일은 국민과 미래를 위한 행복한 세상을 만들어 가기 위한 소명임. 이를 이루기 위해서는 조직의 활력을 위해 뜻과 생각의 자유로운 수평적 소통문화가 필요하며,
+                    지역주민 등 이해관계자와 공감하는 동반자적 관계가 구축되어야 함.</li><br />
+
+                <li> 자연을 지키는 것에 대하여 국민과 함께 소통‧공감한다면, 자연과 인간이 공존하고 더불어 행복한 국립공원의 미션을 달성할 수 있음.</li><br />
+
+                <li> 비전인 ‘자연‧사람‧미래 연결’, 국정철학인 ‘국민이 주인인 정부’ 반영 </li><br />
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm-4"> <img class="img_size" src="./img/track01.jpg"> </div>
+            <div class="col-sm-4"> <img class="img_size" src="./img/track02.jpg"> </div>
+            <div class="col-sm-4"> <img class="img_size" src="./img/track03.jpg"> </div>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid text-center footer">
+        <p>KNPS’s hompage is powered by TG, KIM / Designed by TG</p>
+    </div>
+
+
+
+
+</body>
+
+</html>
